@@ -1,8 +1,13 @@
 $(document).ready(function() {
-
     $('header button').click(function() {
-        alert("Expandir formulario")
+        $('form').slideDown();
     })
+    
+    $('#botao-cancelar').click(function(){
+        $('form').slideUp();
+    })
+
+
 
     $('form').on('submit',function(e){
         console.log('submit')
